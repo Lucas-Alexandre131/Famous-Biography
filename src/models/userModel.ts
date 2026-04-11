@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-export const AccountModel = sequelize.define<
+export const UsertModel = sequelize.define<
   Model<UserAttributes, UserCreationAttributes>
 >('User',{
   id: {

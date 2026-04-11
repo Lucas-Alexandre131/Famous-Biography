@@ -5,27 +5,27 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-export const UsertModel = sequelize.define<
+export const UserModel = sequelize.define<
   Model<UserAttributes, UserCreationAttributes>
->('User',{
+>('User', {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
     autoIncrement: true
   },
-  name:{
+  name: {
     type: DataTypes.STRING(100),
     allowNull: false
   },
-  email:{
-    type:DataTypes.STRING(150),
-    allowNull:false
+  email: {
+    type: DataTypes.STRING(150),
+    allowNull: false
   },
-  password:{
-    type:DataTypes.STRING(100),
-    allowNull:false
+  password: {
+    type: DataTypes.STRING(100),
+    allowNull: false
   }
-},{
+}, {
   tableName: 'UserModel',
   timestamps: false
 });
